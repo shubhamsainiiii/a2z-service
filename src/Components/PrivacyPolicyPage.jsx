@@ -4,7 +4,7 @@ import Footer from './Footer'
 const PrivacyPolicyPage = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF] min-h-screen flex flex-col mt-18">
-            <main className="flex-grow max-w-5xl mx-auto px-6">
+            <main className="flex-grow max-w-5xl mx-auto px-6 text-justify">
                 <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700  to-gray-800 bg-clip-text text-transparent mb-5 p-2 text-center">
                     Privacy Policy
                 </h1>

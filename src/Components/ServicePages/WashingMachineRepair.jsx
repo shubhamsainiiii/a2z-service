@@ -7,7 +7,7 @@ import Footer from "../Footer";
 const WashingMachineRepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/ACBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/WMBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -29,9 +29,9 @@ const WashingMachineRepair = () => {
                     Complete Washing Machine Repair & Maintenance Solutions
                 </h2>
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-5 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> offers reliable and
+                            <strong>A2Z Mechanical Service</strong> offers reliable and
                             affordable washing machine repair, installation, and maintenance services in Jaipur.
                             From drum repair to motor servicing and leak fixes, we ensure your
                             washing machine works efficiently and lasts longer.
@@ -43,22 +43,22 @@ const WashingMachineRepair = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                        <ul className="space-y-3 text-gray-900">
+                        <ul className="space-y-3 text-gray-900 mr-5">
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
                                 Washing Machine Installation & Setup
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Motor & Drum Repair
+                                Drum Jam or Noise Problem Repair
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Leak Fix & Pipe Replacement
+                                Preventive Performance Optimization
                             </li>
                             <li className="flex items-center">
-                                <FaCheckCircle className="text-indigo-500 mr-2" />
-                                AMC Plans for Regular Maintenance
+                                <FaCheckCircle className="text-indigo-500 mr-1" />
+                                No Extra Cost Transparent Pricing
                             </li>
                         </ul>
                     </div>

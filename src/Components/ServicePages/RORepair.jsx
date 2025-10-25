@@ -1,13 +1,13 @@
 import React from "react";
-import { FaCheckCircle, FaPhoneAlt, FaTools, FaWater } from "react-icons/fa"; // Water icon for RO
-import { MdOutlinePlumbing } from "react-icons/md"; // Plumbing/repair icon
+import { FaCheckCircle, FaPhoneAlt, FaTools, FaWater } from "react-icons/fa";
+import { MdOutlinePlumbing } from "react-icons/md";
 import Footer from "../Footer";
 
 
 const RORepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/ACBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/ROBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -30,9 +30,9 @@ const RORepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> provides reliable and
+                            <strong>A2Z Mechanical Service</strong> provides reliable and
                             affordable RO water purifier installation, repair, and maintenance services in Jaipur.
                             From filter replacement to membrane repair, we ensure your purifier
                             delivers clean and safe drinking water.
@@ -44,22 +44,22 @@ const RORepair = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                        <ul className="space-y-3 text-gray-900">
+                        <ul className="space-y-3 text-gray-900 mr-7">
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
                                 RO Purifier Installation & Setup
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Filter & Membrane Replacement
+                                Noise or Air Bubble Issue in System
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Leak & Pipe Repair
+                                Deep Cleaning & Sanitization of Tank
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                AMC Plans for Regular Maintenance
+                                No Extra Cost Transparent Pricing
                             </li>
                         </ul>
                     </div>

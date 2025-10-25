@@ -5,7 +5,7 @@ import Footer from '../Footer';
 const CCTVRepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/AcBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/CCTVBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -28,9 +28,9 @@ const CCTVRepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> offers trusted CCTV
+                            <strong>A2Z Mechanical Service</strong> offers trusted CCTV
                             camera installation and repair services across Jaipur. From new
                             camera setups to DVR/NVR maintenance and wiring, we ensure
                             top-quality work for your home or business security.
@@ -58,7 +58,7 @@ const CCTVRepair = () => {
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Affordable AMC (Annual Maintenance) Plans
+                                Affordable AMC (Annual Maintenance)
                             </li>
                         </ul>
                     </div>

@@ -7,7 +7,7 @@ import Footer from "../Footer";
 const MicrowaveRepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/ACBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/MOBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -30,9 +30,9 @@ const MicrowaveRepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> provides reliable and
+                            <strong>A2Z Mechanical Service</strong> provides reliable and
                             affordable microwave oven repair, installation, and maintenance services in Jaipur.
                             From heating element repair to door and turntable fixes, we ensure your microwave
                             works efficiently and safely.
@@ -44,22 +44,22 @@ const MicrowaveRepair = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                        <ul className="space-y-3 text-gray-900">
+                        <ul className="space-y-3 text-gray-900 mr-5">
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
                                 Microwave Installation & Setup
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Heating Element & Magnetron Repair
+                                Door Lock or Latch Problem Repair
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Door, Turntable & Control Panel Repair
+                                Preventive Maintenance for Long Life
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                AMC Plans for Regular Maintenance
+                                No Extra Cost Transparent Pricing
                             </li>
                         </ul>
                     </div>

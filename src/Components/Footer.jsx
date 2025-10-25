@@ -5,7 +5,7 @@ import { FaClock, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaPhone } 
 const Footer = () => {
     return (
         <>
-            <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950 text-gray-200 mt-10 relative">
+            <footer className="bg-gradient-to-br from-gray-950 via-gray-800 to-gray-900 text-gray-200 mt-10 relative">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-6 mt-5">
                     <div className="flex flex-col items-start ml-4">
                         <h2 className="text-xl font-bold mb-5 text-indigo-400">Info About Us</h2>
@@ -68,8 +68,8 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col items-start ml-4">
-                        <h2 className="text-xl font-bold mb-5 text-indigo-400">Quick Links</h2>
-                        <ul className="space-y-3">
+                        <h2 className="text-xl font-bold text-indigo-400">Quick Links</h2>
+                        <ul className="space-y-3 mt-2">
                             {[
                                 { name: "Home", path: "/home" },
                                 { name: "About Us", path: "/about" },
@@ -102,8 +102,8 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    <div className="w-full flex flex-col items-center px-6">
-                        <p className="text-sm text-gray-400 mt-4 font-normal">
+                    <div className="w-full flex flex-col items-center py-4">
+                        <p className="text-xs text-gray-400 font-normal">
                             &copy; {new Date().getFullYear()} A2Z Service Mechanical - All rights reserved.
                         </p>
                     </div>

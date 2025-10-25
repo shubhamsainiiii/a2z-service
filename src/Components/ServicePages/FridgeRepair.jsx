@@ -6,7 +6,7 @@ import Footer from "../Footer";
 const FridgeRepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/AcBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/FBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -29,9 +29,9 @@ const FridgeRepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> is Jaipur’s most
+                            <strong>A2Z Mechanical Service</strong> is Jaipur’s most
                             trusted name for refrigerator repair and service. Whether it’s a
                             single-door, double-door, or side-by-side fridge — we handle all
                             models with expert care and precision.
@@ -58,7 +58,7 @@ const FridgeRepair = () => {
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                No Hidden Charges – Transparent Pricing
+                                No Hidden Charges Transparent Pricing
                             </li>
                         </ul>
                     </div>
@@ -108,7 +108,7 @@ const FridgeRepair = () => {
                 </div>
             </section>
 
-            <section className="bg-indigo-400 text-white text-center py-16">
+            <section className="bg-indigo-400 text-white text-center py-16 p-1">
                 <h2 className="text-3xl font-bold mb-4">
                     Book Your Fridge Repair Appointment Now!
                 </h2>

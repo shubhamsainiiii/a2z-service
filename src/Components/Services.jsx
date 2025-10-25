@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import RO from '../assets/RO.png';
 import AC from '../assets/AC.png'
-import cctv from '../assets/cctv.png'
+import cctv from '../assets/CCTV.png'
 import chimney from '../assets/chimney.png'
 import geyser from '../assets/geyser.png'
 import fridge from '../assets/fridge.png'

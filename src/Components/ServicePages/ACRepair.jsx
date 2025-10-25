@@ -28,9 +28,9 @@ const ACRepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left ml-15">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> is Jaipur’s trusted
+                            <strong>A2Z Mechanical Service</strong> is Jaipur’s trusted
                             choice for professional AC repair and installation. We provide
                             fast, affordable, and reliable services for all major brands —
                             whether it’s AC gas filling, split/window AC servicing, or
@@ -58,7 +58,7 @@ const ACRepair = () => {
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                No Hidden Costs – 100% Transparency
+                                No Hidden Costs 100% Transparency
                             </li>
                         </ul>
                     </div>
@@ -108,7 +108,7 @@ const ACRepair = () => {
             </section>
             <section className="bg-indigo-400 text-white text-center py-16">
                 <h2 className="text-3xl font-bold mb-4">
-                    Book Your AC Service Appointment Today!
+                    Book Your AC Repair Service Appointment Today!
                 </h2>
                 <p className="text-lg mb-6">
                     Get reliable, affordable, and same-day service at your doorstep in

@@ -7,7 +7,7 @@ import Footer from "../Footer";
 const GeyserRepair = () => {
     return (
         <div className="bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
-            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/ACBg.jpg')] mt-18">
+            <section className="h-116 relative bg-center bg-cover text-white bg-[url('/src/assets/GBg.jpg')] mt-18">
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-30 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -30,9 +30,9 @@ const GeyserRepair = () => {
                 </h2>
 
                 <div className="md:flex items-center justify-center gap-16">
-                    <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                    <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>Accurate Service Mechanical</strong> offers reliable and
+                            <strong>A2Z Mechanical Service</strong>offers reliable and
                             affordable geyser repair, installation, and maintenance services in Jaipur.
                             From heating element replacement to leak repairs, we ensure your geyser
                             works efficiently and safely.
@@ -44,22 +44,22 @@ const GeyserRepair = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                        <ul className="space-y-3 text-gray-900">
+                        <ul className="space-y-3 text-gray-900 mr-3">
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
                                 Geyser Installation & Setup
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Heating Element Replacement
+                                Leakage Detection & Tank Repair
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                Leak Repair & Maintenance
+                                Performance & Efficiency Optimization
                             </li>
                             <li className="flex items-center">
                                 <FaCheckCircle className="text-indigo-500 mr-2" />
-                                AMC Plans for Regular Service
+                                No Hidden Charges Transparent Pricing
                             </li>
                         </ul>
                     </div>
@@ -69,7 +69,7 @@ const GeyserRepair = () => {
                 <h2 className="text-4xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700  to-gray-800 bg-clip-text text-transparent text-center mb-10 p-1">
                     Our Geyser Services
                 </h2>
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 ">
                     {[
                         {
                             icon: <MdOutlinePlumbing size={40} />,
@@ -109,7 +109,7 @@ const GeyserRepair = () => {
             </section>
             <section className="bg-indigo-400 text-white text-center py-16">
                 <h2 className="text-3xl font-bold mb-4">
-                    Book Your Geyser Service Appointment Today!
+                    Book Your Geyser Repair Service Appointment Now!
                 </h2>
                 <p className="text-lg mb-6">
                     Get expert geyser installation, repair & maintenance at your doorstep in Jaipur.

@@ -10,6 +10,7 @@ import service2 from "../assets/carousel2.jpg";
 import service3 from "../assets/carousel3.jpg";
 import { Link } from "react-router-dom";
 import Footer from './Footer';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const slides = [
     {
         image: service1,
@@ -63,7 +64,7 @@ const Home = () => {
                                 <img
                                     src={slide.image}
                                     alt={slide.title}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-fill"
                                 />
                                 <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-6">
                                     <h3 className="text-lg md:text-2xl font-medium uppercase tracking-wide mb-2">
@@ -83,7 +84,12 @@ const Home = () => {
                     <div className="grid md:grid-cols-3 gap-8">
                         {services.map((service, idx) => (
                             <div key={idx} className="bg-[#FAF7F3] rounded-lg shadow-sm p-6 hover:shadow-md shadow-gray-600 transition-all duration-300 hover:-translate-y-2">
-                                <img src={service.image} alt={service.title} className="w-full h-48 object-cover rounded-md mb-4" />
+                                <LazyLoadImage
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="w-full h-48 object-cover rounded-md mb-4"
+                                    wrapperProps={{ style: { transitionDelay: "1s" } }}
+                                    effect="blur" />
                                 <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
                                 <p className="text-gray-600">{service.description}</p>
                             </div>

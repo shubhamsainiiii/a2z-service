@@ -4,10 +4,12 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneFlip } from "react-icons/fa6";
 import ACPage from "../assets/ACPage.jpg";
 import Footer from "./Footer";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const AboutUs = () => {
-    const cities = ["Jaipur", "Chomu", "Ajeetgarh", "Amarsar", "Sikar", "Neem Ka Thana", "Shahpura", "Ajmer"];
+    const cities = ["Jaipur", "Chomu", "Ajeetgarh", "Amarsar", "Sikar", "Shahpura", "Ajmer"];
 
     return (
         <section id="about" className="mt-18 bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF] ">
@@ -16,21 +18,23 @@ const AboutUs = () => {
                     <h2 className="text-5xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700 to-gray-800 bg-clip-text text-transparent mb-5 p-2">
                         A2Z Service Mechanical
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-900">
+                    <p className="text-lg md:text-xl text-gray-900 text-center">
                         Providing reliable and expert mechanical services to keep your home and appliances running smoothly.
                     </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img
+                        <LazyLoadImage
                             src={ACPage}
                             alt="Mechanical Services"
+                            effect="blur"
+                            wrapperProps={{ style: { transitionDelay: "1s" } }}
                             className="w-full rounded-lg shadow-sm shadow-gray-400"
                         />
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-4 text-justify">
                         <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
                             Who We Are
                         </h3>
@@ -67,7 +71,7 @@ const AboutUs = () => {
                                         className="flex items-center justify-center gap-2 bg-[#FAF7F3] shadow-sm rounded-xl py-4 px-2 hover:shadow-md shadow-gray-600 hover:-translate-y-1 transition-all duration-300 border border-gray-100"
                                     >
                                         <FaMapMarkerAlt className="text-indigo-500 text-xl" />
-                                        <span className="text-gray-800 font-medium text-lg">
+                                        <span className="text-gray-800 font-medium text-lg ">
                                             {city}
                                         </span>
                                     </div>
