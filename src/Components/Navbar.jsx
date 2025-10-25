@@ -50,7 +50,7 @@ const Navbar = () => {
                             to={path}
                             onClick={() => setIsOpen(false)}
                             className={`block transition-all duration-300 font-medium ${location.pathname === path
-                                ? "text-red-500"
+                                ? "text-indigo-300"
                                 : "text-white hover:text-orange-400"
                                 }`}
                         >
