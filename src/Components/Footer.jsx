@@ -49,7 +49,7 @@ const Footer = () => {
                                     { name: "Geyser Repairing Service", path: "/service/geyser" },
                                     { name: "Washing Machine Repairing", path: "/service/washing-machine" },
                                     { name: "Microwave Repairing", path: "/service/microwave" },
-                                    { name: "R.O Repairing", path: "/service/ro" },
+                                    { name: "R.O. Repairing", path: "/service/ro" },
                                     { name: "Kitchen Chimney Repairing", path: "/service/chimney" },
                                     { name: "CCTV Installation", path: "/service/cctv" },
                                     { name: "GPS Tracker Repairing", path: "/service/gps" },
