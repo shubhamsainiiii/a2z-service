@@ -107,7 +107,7 @@ const Home = () => {
             </section>
             <section className="mt-1">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h2 className="text-5xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700  to-gray-800 bg-clip-text text-transparent mb-10">Why Choose A2Z Service Mechanical</h2>
+                    <h2 className="text-5xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700  to-gray-800 bg-clip-text text-transparent mb-10">Why Choose A2Z Mechanical Service</h2>
                     <div className="grid md:grid-cols-3 gap-10">
                         <div className="bg-[#FAF7F3] p-6 rounded-lg shadow-sm hover:shadow-md shadow-gray-600 transition-all duration-300 hover:-translate-y-2">
                             <FaTools className="text-indigo-500 text-3xl mb-4 mx-auto" />

@@ -4,7 +4,7 @@ import Contactimage from "../assets/contactimage.png";
 import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 import Footer from "./Footer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Swal from "sweetalert2"; // ✅ Import Swal
+import Swal from "sweetalert2";
 
 const services = [
     "Split & Window AC Repairing",
@@ -25,10 +25,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                "service_5zvwkui", // 🔹 Your EmailJS service ID
-                "template_0btohq9", // 🔹 Your EmailJS template ID
+                "service_5zvwkui",
+                "template_0btohq9",
                 form.current,
-                "XxqX232rY1uRWlWNb" // 🔹 Your EmailJS public key
+                "XxqX232rY1uRWlWNb"
             )
             .then(
                 (result) => {
@@ -37,17 +37,17 @@ const Contact = () => {
                         title: "✅ Message Sent!",
                         text: "Your message has been sent successfully. We'll get back to you soon!",
                         icon: "success",
-                        confirmButtonColor: "#4f46e5", // Indigo button color
+                        confirmButtonColor: "#4f46e5",
                     });
-                    e.target.reset(); // clear form
+                    e.target.reset();
                 },
                 (error) => {
                     console.log(error);
                     Swal.fire({
-                        title: "❌ Failed to Send!",
+                        title: "Failed to Send!",
                         text: "Something went wrong. Please try again later.",
                         icon: "error",
-                        confirmButtonColor: "#ef4444", // Red button color
+                        confirmButtonColor: "#ef4444",
                     });
                 }
             );
@@ -67,8 +67,6 @@ const Contact = () => {
                     services, need support, or want to book a repair. Get in touch with
                     our friendly team. We’ll respond as quickly as possible.
                 </p>
-
-                {/* Contact Cards */}
                 <div className="grid sm:grid-cols-3 gap-6 text-center mb-12">
                     <div className="bg-[#FAF7F3] shadow-sm rounded-lg p-6 hover:shadow-md shadow-gray-600 transition-all duration-300 hover:-translate-y-2">
                         <FaPhoneAlt className="text-indigo-500 text-3xl mx-auto mb-3" />
@@ -95,7 +93,6 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Contact Form */}
                 <div className="flex flex-col md:flex-row rounded-xl overflow-hidden">
                     <div className="md:w-1/2 flex items-center justify-center p-6">
                         <LazyLoadImage

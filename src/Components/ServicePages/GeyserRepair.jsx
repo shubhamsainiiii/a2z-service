@@ -32,7 +32,7 @@ const GeyserRepair = () => {
                 <div className="md:flex items-center justify-center gap-16">
                     <div className="md:w-1/2 space-y-4 md:text-left text-justify">
                         <p className="text-gray-900 leading-relaxed">
-                            <strong>A2Z Mechanical Service</strong>offers reliable and
+                            <strong>A2Z Mechanical Service</strong> offers reliable and
                             affordable geyser repair, installation, and maintenance services in Jaipur.
                             From heating element replacement to leak repairs, we ensure your geyser
                             works efficiently and safely.

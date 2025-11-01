@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
                     Privacy Policy
                 </h1>
                 <p className="text-gray-900 mt-10">
-                    At A2Z Service Mechanical, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.
+                    At <b>A2Z Mechanical Service</b>, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.
                 </p>
                 <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-3">
                     Information We Collect

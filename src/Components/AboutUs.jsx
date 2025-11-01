@@ -12,11 +12,11 @@ const AboutUs = () => {
     const cities = ["Jaipur", "Chomu", "Ajeetgarh", "Amarsar", "Sikar", "Shahpura", "Ajmer"];
 
     return (
-        <section id="about" className="mt-18 bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF] ">
+        <section id="about" className="mt-18 bg-gradient-to-b from-[#A3CCDA] via-indigo-200 to-[#E7F2EF]">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-bold bg-gradient-to-br from-gray-950 via-indigo-700 to-gray-800 bg-clip-text text-transparent mb-5 p-2">
-                        A2Z Service Mechanical
+                        A2Z Mechanical Service
                     </h2>
                     <p className="text-lg md:text-xl text-gray-900 text-center">
                         Providing reliable and expert mechanical services to keep your home and appliances running smoothly.
@@ -39,7 +39,7 @@ const AboutUs = () => {
                             Who We Are
                         </h3>
                         <p className="text-gray-900 text-base md:text-lg">
-                            A2Z Service Mechanical is your trusted partner for all mechanical repairs and maintenance. With years of experience in AC repair, water purifier service, washing machine maintenance, and other household appliances, we ensure top-quality service delivered right at your doorstep.
+                            A2Z Mechanical Service is your trusted partner for all mechanical repairs and maintenance. With years of experience in AC repair, water purifier service, washing machine maintenance, and other household appliances, we ensure top-quality service delivered right at your doorstep.
                         </p>
 
                         <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">

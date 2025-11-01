@@ -104,7 +104,7 @@ const Footer = () => {
 
                     <div className="w-full flex flex-col items-center py-4">
                         <p className="text-xs text-gray-400 font-normal">
-                            &copy; {new Date().getFullYear()} A2Z Service Mechanical - All rights reserved.
+                            &copy; {new Date().getFullYear()} A2Z Mechanical Service - All rights reserved.
                         </p>
                     </div>
                 </div>
