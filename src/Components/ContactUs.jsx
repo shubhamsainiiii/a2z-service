@@ -25,10 +25,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                "service_5zvwkui",
-                "template_0btohq9",
+                "service_x5zbebs",
+                "template_xsrmu3a",
                 form.current,
-                "XxqX232rY1uRWlWNb"
+                "hyOpMhJcpkTq1jZbt"
             )
             .then(
                 (result) => {
@@ -79,8 +79,8 @@ const Contact = () => {
                     <div className="bg-[#FAF7F3] shadow-sm rounded-lg p-6 hover:shadow-md shadow-gray-600 transition-all duration-300 hover:-translate-y-2">
                         <FaEnvelope className="text-indigo-500 text-3xl mx-auto mb-3" />
                         <h4 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h4>
-                        <a href="mailto:manishsaini965@gmail.com" className="text-gray-600">
-                            manishsaini965@gmail.com
+                        <a href="mailto:mechanicalserviceaz@gmail.com" className="text-gray-600">
+                            mechanicalserviceaz@gmail.com
                         </a>
                     </div>
 

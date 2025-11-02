@@ -4,7 +4,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { FaTools, FaBolt, FaShieldAlt, FaPhoneAlt, FaClock, FaEnvelope } from "react-icons/fa";
+import { FaTools, FaBolt, FaShieldAlt } from "react-icons/fa";
 import service1 from "../assets/carousel1.jpg";
 import service2 from "../assets/carousel2.jpg";
 import service3 from "../assets/carousel3.jpg";

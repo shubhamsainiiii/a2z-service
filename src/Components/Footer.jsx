@@ -17,9 +17,9 @@ const Footer = () => {
                             <FaPhoneAlt className="text-indigo-300" />
                             +91-9251288005
                         </a>
-                        <a href="mailto:manishsaini965@gmail.com" className="flex items-center gap-3 mt-3 text-sm hover:text-indigo-300 transition-colors duration-300">
+                        <a href="mailto:mechanicalserviceaz@gmail.com" className="flex items-center gap-3 mt-3 text-sm hover:text-indigo-300 transition-colors duration-300">
                             <FaEnvelope className="text-indigo-300" />
-                            manishsaini965@gmail.com
+                            mechanicalserviceaz@gmail.com
                         </a>
                         <p className="flex items-center gap-3 mt-3 text-sm">
                             <FaMapMarkerAlt className="text-indigo-300" />
