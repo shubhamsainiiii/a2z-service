@@ -18,7 +18,7 @@ const slides = [
     },
     {
         image: carousel2,
-        title: "Your Trusted Repair Partner",
+        title: "Smart Repairs for a Smart World",
         text: "We fix it right the first time! Certified technicians, transparent pricing, and guaranteed satisfaction."
     },
     {
