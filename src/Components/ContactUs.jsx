@@ -26,7 +26,7 @@ const Contact = () => {
         message: "",
     });
 
-    const [sending, setSending] = useState(false); // ✅ new state
+    const [sending, setSending] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -35,13 +35,21 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setSending(true); // ✅ start loading
+        setSending(true);
+
+        const templateParams = {
+            name: formData.name,
+            email: formData.email,
+            number: formData.number,
+            service: formData.service,
+            message: formData.message,
+        };
 
         emailjs
             .send(
                 "service_x5zbebs",
                 "template_xsrmu3a",
-                formData,
+                templateParams,
                 "hyOpMhJcpkTq1jZbt"
             )
             .then(
@@ -60,7 +68,7 @@ const Contact = () => {
                         service: "",
                         message: "",
                     });
-                    setSending(false); // ✅ stop loading
+                    setSending(false);
                 },
                 (error) => {
                     console.log(error);
@@ -70,7 +78,7 @@ const Contact = () => {
                         icon: "error",
                         confirmButtonColor: "#ef4444",
                     });
-                    setSending(false); // ✅ stop loading
+                    setSending(false);
                 }
             );
     };
@@ -185,7 +193,7 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     disabled={sending} // ✅ disable while sending
-                                    className={`py-2 px-6 rounded-md font-semibold transition-all duration-500 ${sending
+                                    className={`py-2 px-6 rounded-md font-semibold transition-all duration-500 cursor-pointer ${sending
                                         ? "bg-gray-400 cursor-not-allowed"
                                         : "bg-indigo-500 hover:bg-indigo-600 text-white"
                                         }`}
