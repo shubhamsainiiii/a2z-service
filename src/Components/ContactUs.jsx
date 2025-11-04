@@ -56,7 +56,7 @@ const Contact = () => {
                 (result) => {
                     console.log(result.text);
                     Swal.fire({
-                        title: "✅ Message Sent!",
+                        title: "Message Sent!",
                         text: "Your message has been sent successfully. We'll get back to you soon!",
                         icon: "success",
                         confirmButtonColor: "#4f46e5",
@@ -192,7 +192,7 @@ const Contact = () => {
                             <div className="flex justify-center mt-4">
                                 <button
                                     type="submit"
-                                    disabled={sending} // ✅ disable while sending
+                                    disabled={sending}
                                     className={`py-2 px-6 rounded-md font-semibold transition-all duration-500 cursor-pointer ${sending
                                         ? "bg-gray-400 cursor-not-allowed"
                                         : "bg-indigo-500 hover:bg-indigo-600 text-white"
