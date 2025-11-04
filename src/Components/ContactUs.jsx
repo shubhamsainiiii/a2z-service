@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Contactimage from "../assets/contactimage.png";
 import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
@@ -18,16 +18,30 @@ const services = [
 ];
 
 const Contact = () => {
-    const form = useRef();
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        number: "",
+        service: "",
+        message: "",
+    });
+
+    const [sending, setSending] = useState(false); // ✅ new state
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setSending(true); // ✅ start loading
 
         emailjs
-            .sendForm(
+            .send(
                 "service_x5zbebs",
                 "template_xsrmu3a",
-                form.current,
+                formData,
                 "hyOpMhJcpkTq1jZbt"
             )
             .then(
@@ -39,7 +53,14 @@ const Contact = () => {
                         icon: "success",
                         confirmButtonColor: "#4f46e5",
                     });
-                    e.target.reset();
+                    setFormData({
+                        name: "",
+                        email: "",
+                        number: "",
+                        service: "",
+                        message: "",
+                    });
+                    setSending(false); // ✅ stop loading
                 },
                 (error) => {
                     console.log(error);
@@ -49,6 +70,7 @@ const Contact = () => {
                         icon: "error",
                         confirmButtonColor: "#ef4444",
                     });
+                    setSending(false); // ✅ stop loading
                 }
             );
     };
@@ -67,6 +89,7 @@ const Contact = () => {
                     services, need support, or want to book a repair. Get in touch with
                     our friendly team. We’ll respond as quickly as possible.
                 </p>
+
                 <div className="grid sm:grid-cols-3 gap-6 text-center mb-12">
                     <div className="bg-[#FAF7F3] shadow-sm rounded-lg p-6 hover:shadow-md shadow-gray-600 transition-all duration-300 hover:-translate-y-2">
                         <FaPhoneAlt className="text-indigo-500 text-3xl mx-auto mb-3" />
@@ -105,12 +128,14 @@ const Contact = () => {
                     </div>
 
                     <div className="md:w-1/2 p-8 flex items-center justify-center">
-                        <form ref={form} onSubmit={sendEmail} className="w-full space-y-6">
+                        <form onSubmit={sendEmail} className="w-full space-y-6">
                             <input
                                 name="name"
                                 type="text"
                                 placeholder="Your Name"
                                 required
+                                value={formData.name}
+                                onChange={handleChange}
                                 className="w-full h-13 shadow-sm shadow-gray-600 px-4 py-4 rounded-md outline-none"
                             />
                             <input
@@ -118,6 +143,8 @@ const Contact = () => {
                                 type="email"
                                 placeholder="Your Email"
                                 required
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="w-full h-13 shadow-sm shadow-gray-600 px-4 py-4 rounded-md outline-none"
                             />
                             <input
@@ -125,13 +152,16 @@ const Contact = () => {
                                 type="text"
                                 placeholder="Phone Number"
                                 required
+                                value={formData.number}
+                                onChange={handleChange}
                                 className="w-full h-13 shadow-sm shadow-gray-600 px-4 py-4 rounded-md outline-none"
                             />
                             <select
                                 name="service"
                                 required
+                                value={formData.service}
+                                onChange={handleChange}
                                 className="w-full h-13 shadow-sm shadow-gray-600 px-4 py-4 rounded-md outline-none"
-                                defaultValue=""
                             >
                                 <option value="" disabled>
                                     Choose Service
@@ -146,14 +176,21 @@ const Contact = () => {
                                 name="message"
                                 placeholder="Message"
                                 required
+                                value={formData.message}
+                                onChange={handleChange}
                                 className="w-full shadow-sm shadow-gray-600 px-4 py-8 rounded-md outline-none"
                             ></textarea>
+
                             <div className="flex justify-center mt-4">
                                 <button
                                     type="submit"
-                                    className="bg-indigo-500 text-white py-2 px-6 rounded-md hover:bg-indigo-600 font-semibold cursor-pointer transition-all duration-500"
+                                    disabled={sending} // ✅ disable while sending
+                                    className={`py-2 px-6 rounded-md font-semibold transition-all duration-500 ${sending
+                                        ? "bg-gray-400 cursor-not-allowed"
+                                        : "bg-indigo-500 hover:bg-indigo-600 text-white"
+                                        }`}
                                 >
-                                    Send Message
+                                    {sending ? "Sending..." : "Send Message"}
                                 </button>
                             </div>
                         </form>
