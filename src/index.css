@@ -3,3 +3,7 @@
 @theme {
   --font-primary: "Baloo Bhai 2";
 }
+
+html {
+  scroll-behavior: smooth;
+}

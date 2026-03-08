@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { FaTools, FaBolt, FaShieldAlt, FaArrowRight } from "react-icons/fa";
-import carousel1 from "../assets/carousel1.jpg";
-import carousel2 from "../assets/carousel2.jpg";
-import carousel3 from "../assets/carousel3.jpg";
+import carousel1 from "../assets/optimized/carousel1.webp";
+import carousel2 from "../assets/optimized/carousel2.webp";
+import carousel3 from "../assets/optimized/carousel3.webp";
 import { Link } from "react-router-dom";
 
 const slides = [
@@ -98,5 +98,4 @@ const Hero = () => (
         </Swiper>
     </section>
 );
-
 export default Hero;

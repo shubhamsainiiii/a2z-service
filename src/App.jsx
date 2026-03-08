@@ -1,32 +1,6 @@
-// import React from "react";
-// // import { Routes, Route } from "react-router-dom";
-// import Navbar from "./Components/Navbar";
-// import Hero from './Components/Hero';
-// import AboutUs from './Components/AboutUs';
-// import Services from "./Components/Services";
-// import Footer from "./Components/Footer";
-// import Contact from "./Components/ContactUs";
-
-
-// const App = () => {
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero />
-//       <AboutUs />
-//       <Services />
-//       <Contact />
-//       <Footer />
-//     </>
-//   );
-// };
-// export default App;
-
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ACRepair from './Components/ServicePages/ACRepair';
-
 import GeyserRepair from './Components/ServicePages/GeyserRepair';
 import WashingMachineRepair from './Components/ServicePages/WashingMachineRepair';
 import RORepair from './Components/ServicePages/RORepair';
@@ -43,11 +17,13 @@ import Home from "./Components/Home";
 import PrivacyPolicyPage from "./Components/PrivacyPolicyPage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="font-serif">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />

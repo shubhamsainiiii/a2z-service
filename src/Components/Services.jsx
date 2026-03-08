@@ -1,15 +1,15 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import RO from '../assets/RO.png';
-import AC from '../assets/AC.png'
-import cctv from '../assets/CCTV.png'
-import chimney from '../assets/chimney.png'
-import geyser from '../assets/geyser.png'
-import fridge from '../assets/fridge.png'
-import washingmachine from '../assets/washingmachine.png';
-import microwave from '../assets/microwave.png';
-import GPS from '../assets/GPS.png';
+import RO from '../assets/optimized/RO.webp';
+import AC from '../assets/optimized/AC.webp'
+import cctv from '../assets/optimized/CCTV.webp'
+import chimney from '../assets/optimized/chimney.webp'
+import geyser from '../assets/optimized/geyser.webp'
+import fridge from '../assets/optimized/fridge.webp'
+import washingmachine from '../assets/optimized/washingmachine.webp';
+import microwave from '../assets/optimized/microwave.webp';
+import GPS from '../assets/optimized/GPS.webp';
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 

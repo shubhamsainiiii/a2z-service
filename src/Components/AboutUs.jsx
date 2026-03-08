@@ -2,7 +2,7 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneFlip } from "react-icons/fa6";
-import ACPage from "../assets/ACPage.jpg";
+import ACPage from "../assets/optimized/ACPage.webp";
 import Footer from "./Footer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';

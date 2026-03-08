@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Contactimage from "../assets/contactimage.png";
+import Contactimage from "../assets/optimized/contactimage.webp";
 import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 import Footer from "./Footer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
